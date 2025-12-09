@@ -1,0 +1,32 @@
+Terminal 1:
+
+powershell -ExecutionPolicy Bypass -NoProfile
+cd backend
+venv\Scripts\activate
+python main.py
+
+Terminal 2:
+
+powershell -ExecutionPolicy Bypass -NoProfile
+cd frontend
+npm run dev -- --host
+
+Terminal 3:
+ollama serve
+
+1. Challenge Description:
+We operate three aging offshore oil platforms in the North Sea, currently emitting 85,000 tCO2e annually, with methane emissions accounting for 22% of this total. We need to achieve 60% emissions reduction by 2028 to meet UK regulatory requirements, but face severe challenges: platforms are 150km offshore with restricted access (weather-dependent), operate in ATEX Zone 1 hazardous areas, have limited deck space for new equipment, and rely entirely on gas turbines for power generation. Current flaring eliminates 2,400 tonnes of methane annually but contributes significantly to CO2 emissions. We need solutions that can be deployed without major platform shutdowns and integrate with our existing Siemens control systems.
+
+Additional Context:
+- Industry Sector: Oil & Gas - Offshore
+- Emissions Baseline: 85000 tCO2e/year
+- Target Reduction: 60%
+- Timeline: 36 months
+- Budget Range: £10M+
+- Constraints: 
+  * Hazardous environment (ATEX/IECEx)
+  * Remote location / limited connectivity
+  * Existing infrastructure constraints
+  * Regulatory compliance requirements
+
+2. 
